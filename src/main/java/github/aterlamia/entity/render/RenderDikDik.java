@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 import javax.annotation.Nullable;
 
 public class RenderDikDik extends RenderLiving<EntityDikDik> {
-    private static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MODID + ":textures/entity/dikdik.png");
+    private static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MODID, "textures/entity/dikdik/dikdik.png");
 
     public RenderDikDik(RenderManager rendermanagerIn) {
         super(rendermanagerIn, new ModelDikDik(), 0.5f);

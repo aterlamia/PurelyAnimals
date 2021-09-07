@@ -1,7 +1,7 @@
 [
     {
-        "modid": "aterlamia",
-        "name": "puerelyanimals",
+        "modid": "purelyanimals",
+        "name": "Purely animals mod",
         "description": "",
         "version": "${version}",
         "mcversion": "${mcversion}",
