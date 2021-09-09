@@ -12,8 +12,8 @@ import org.zawamod.entity.core.AnimalPack;
 
 import javax.annotation.Nullable;
 
-public class EntityDikDik extends BaseLandAnimal {
-    public EntityDikDik(World worldIn) {
+public class EntityEmu extends BaseLandAnimal {
+    public EntityEmu(World worldIn) {
         super(worldIn);
         this.setSize(0.9f, 2.0f);
     }
@@ -24,8 +24,8 @@ public class EntityDikDik extends BaseLandAnimal {
     }
 
     @Override
-    public EntityDikDik createChild(EntityAgeable ageable) {
-        return new EntityDikDik(world);
+    public EntityEmu createChild(EntityAgeable ageable) {
+        return new EntityEmu(world);
     }
 
     @Nullable
@@ -58,7 +58,7 @@ public class EntityDikDik extends BaseLandAnimal {
     @NotNull
     @Override
     public AnimalPack getPack() {
-        return github.aterlamia.utils.AnimalPack.DIKDIK;
+        return github.aterlamia.utils.AnimalPack.EMU;
     }
 
 
