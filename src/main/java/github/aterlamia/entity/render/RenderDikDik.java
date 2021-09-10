@@ -32,7 +32,7 @@ public class RenderDikDik extends RenderLivingZAWA<EntityDikDik> {
     }
 
     protected void preRenderCallback(EntityDikDik entity, float partialTickTime) {
-        float scale = 0.9F + (ModuleManager.GENDER.getGender(entity).equals(Gender.MALE) ? 0.01f : 0f) +
+        float scale = 0.3F + (ModuleManager.GENDER.getGender(entity).equals(Gender.MALE) ? 0.01f : 0f) +
                 (float)ModuleManager.SCALE.getSizeMultiplier(entity) * 0.01f;
         GlStateManager.scale(scale, scale, scale);
         GlStateManager.translate(0.0F,  - 0.0F * scale, 0.0F);

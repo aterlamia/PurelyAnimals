@@ -1,6 +1,7 @@
 package github.aterlamia.entity.render;
 
 import github.aterlamia.client.model.ModelEmu;
+import github.aterlamia.entity.EntityDikDik;
 import github.aterlamia.entity.EntityEmu;
 import github.aterlamia.utils.Reference;
 import net.minecraft.client.renderer.GlStateManager;
@@ -30,11 +31,11 @@ public class RenderEmu extends RenderLivingZAWA<EntityEmu> {
         super.applyRotations(entityLiving, ageInTicks, rotationYaw, partialTicks);
     }
 
-//    protected void preRenderCallback(EntityEmu entity, float partialTickTime) {
-//        float scale = 1.1F + (ModuleManager.GENDER.getGender(entity).equals(Gender.MALE) ? 0.01f : 0f) +
-//                (float)ModuleManager.SCALE.getSizeMultiplier(entity) * 0.01f;
-//        GlStateManager.scale(scale, scale, scale);
-//        GlStateManager.translate(0.0F,  - 0.0F * scale, 0.0F);
-//        super.preRenderCallback(entity, partialTickTime);
-//    }
+    protected void preRenderCallback(EntityEmu entity, float partialTickTime) {
+        float scale = 1.3F + (ModuleManager.GENDER.getGender(entity).equals(Gender.MALE) ? 0.01f : 0f) +
+                (float)ModuleManager.SCALE.getSizeMultiplier(entity) * 0.01f;
+        GlStateManager.scale(scale, scale, scale);
+        GlStateManager.translate(0.0F,  - 0.0F * scale, 0.0F);
+        super.preRenderCallback(entity, partialTickTime);
+    }
 }
