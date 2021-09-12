@@ -11,6 +11,8 @@
         "credits": "",
         "logoFile": "",
         "screenshots": [],
-        "dependencies": []
+        "requiredMods": ["forge", "bookworm", "zawa"],
+        "dependencies": ["forge", "bookworm", "zawa"],
+        "useDependencyInformation": "true"
     }
 ]
